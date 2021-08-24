@@ -22,14 +22,26 @@ describe('sayHello', function(){
     it('should return a string when called', function(){
         expect(typeof sayHello()).toBe('string');
     });
-    it('should return the string "Hello" when executed', function() {
-        expect(sayHello()).toBe("Hello");
-    });
     it('should never return "undefined" when called', function () {
         expect(sayHello()).not.toBe(undefined);
     });
+    it('should return "Hello, Jane!" when input ("Jane") is passed', function(){
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+    });
+    it('should return "Hello, Alex!" when input ("Alex") is passed', function(){
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
+    it('should return "Hello, Pat!" when input ("Pat") is passed', function(){
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
+
 
 });
 
 
 
+/* jumped the gun
+it('should return the string "Hello, " + name + "!" when executed', function() {
+        expect(sayHello(name)).toBe("Hello, " + name + "!");
+    });
+ */
