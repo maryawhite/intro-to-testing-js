@@ -51,6 +51,29 @@ describe('sayHello', function(){
     });
 });
 
+    //#10 isFive function
+    describe('isFive', function(){
+        it('should be a defined function', function() {
+            expect(typeof isFive).toBe('function');
+        });
+        it('should return a boolean when called', function() {
+            expect(typeof isFive()).toBe("boolean");
+        });
+        it('should never return "undefined" when called', function () {
+            expect(isFive()).not.toBe(undefined);
+        });
+        it("should return true when 5 is entered", function(){
+            expect(isFive(5)).toBe(true);
+        });
+        it("should return false when -5 is entered", function(){
+            expect(isFive(-5)).toBe(false);
+        });
+        it("should return false when a string is entered", function(){
+            expect(isFive("string")).toBe(false);
+        });
+
+});
+
 
 /* looks like you cannot put parameters into the expect...
 it('should return the string "Hello, " + input + "!" when executed', function() {
