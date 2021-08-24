@@ -37,13 +37,21 @@ describe('sayHello', function(){
     it('should return the string "Hello, " + name + "!" when executed', function() {
         expect(sayHello(name)).toBe("Hello, " + name + "!");
     });
+    //add expect(sayHello()).toBe("Hello, World!"). Then refresh report.html to see the failing test.
+    it("expect sayHello to be Hello, World!", function() {
+        expect(sayHello("World")).toBe("Hello, World!")
+    });
+    //Next, add expect(sayHello(true)).toBe("Hello, World!") to the tests.js file.
+    it("return Hello, World! if sayHello is true", function() {
+        expect(sayHello(true)).toBe("Hello, World")
+    });
+
 
 });
 
 
-
-/* jumped the gun
-it('should return the string "Hello, " + name + "!" when executed', function() {
-        expect(sayHello(name)).toBe("Hello, " + name + "!");
+/* looks like you cannot put parameters into the expect...
+it('should return the string "Hello, " + input + "!" when executed', function() {
+        expect(sayHello(input)).toBe("Hello, " + input + "!");
     });
  */

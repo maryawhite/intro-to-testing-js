@@ -3,13 +3,13 @@ function helloWorld() {
     return "Hello, World!";
 }
 
+//sayHello function
 function sayHello(input) {
+
     return "Hello, " + input + "!";
 }
 
-sayHello("Mary");
-sayHello("Scott");
-sayHello(name);
+
 
 
 
