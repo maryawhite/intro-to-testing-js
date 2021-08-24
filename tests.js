@@ -49,8 +49,6 @@ describe('sayHello', function(){
     it("return Hello, World! if sayHello is false", function() {
         expect(sayHello(false)).toBe("Hello, World!")
     });
-
-
 });
 
 
