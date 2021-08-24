@@ -22,6 +22,16 @@ function isFive(number){
     }
 }
 
+//isEven function
+function isEven(num){
+    num = parseInt(num);
+    if (num % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 
 
