@@ -43,7 +43,11 @@ describe('sayHello', function(){
     });
     //Next, add expect(sayHello(true)).toBe("Hello, World!") to the tests.js file.
     it("return Hello, World! if sayHello is true", function() {
-        expect(sayHello(true)).toBe("Hello, World")
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+    //Now, add expect(sayHello(false)).toBe("Hello, World!") to the tests.js file.
+    it("return Hello, World! if sayHello is false", function() {
+        expect(sayHello(false)).toBe("Hello, World!")
     });
 
 

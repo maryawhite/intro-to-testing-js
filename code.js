@@ -1,12 +1,15 @@
 // helloWorld function 
-function helloWorld() {
+const helloWorld = function() {
     return "Hello, World!";
 }
 
 //sayHello function
 function sayHello(input) {
-
-    return "Hello, " + input + "!";
+    if (input === true) {
+        return "Hello, World!";
+    } else {
+        return "Hello, " + input + "!";
+    }
 }
 
 
