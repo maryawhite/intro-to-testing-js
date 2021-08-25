@@ -32,6 +32,23 @@ function isEven(num){
     }
 }
 
+//isVowel function
+
+function isVowel(letter){
+    if (letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u" || letter === "A" || letter === "E" || letter === "I" || letter === "O" || letter === "U"){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//add function
+function add(num1, num2){
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+    return num1 + num2
+}
+
 
 
 
